@@ -1,0 +1,50 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./example.tsx";
+import * as MyFavouriteBorder from "./MyFavouriteBorder.stories.tsx";
+
+<Meta of={MyFavouriteBorder} title="MyFavouriteBorder" />
+
+# MyFavouriteBorder
+
+Componente de botón con diferentes especializaciones.
+
+#### Example
+
+<Canvas of={MyFavouriteBorder.Primary} />
+
+## Usage
+
+```ts
+import {MyFavouriteBorder} from 'milibreria';
+
+function Example(){
+ return (
+ <MyFavouriteBorder
+    bgcolor: "red",
+    disabled: false,
+    onClick: () => alert("Icono principal"),
+ />
+ );
+};
+
+export default Example;
+``` 
+
+#### Example
+
+<Canvas of={MyFavouriteBorder.Secondary} />
+
+## Usage
+
+```ts
+import {MyFavouriteBorder} from 'milibreria';
+
+function Example(){ 
+     return (
+ <MyFavouriteBorder
+    bgcolor: "orange",
+    disabled: false,
+    onClick: () => alert("Icono secundario"),
+ />
+ );
+};
