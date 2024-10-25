@@ -1,1 +1,1 @@
-export { default as MyButton } from './ComponentPACP';
+export { default as ComponentPACP } from './ComponentPACP';

@@ -7,22 +7,30 @@ const meta: Meta<typeof Example> = {
 export default meta;
 type Story = StoryObj<typeof Example>;
 export const Primary: Story = {
- args: {
- text: "Primer botón",
- txtcolor: 'white',
- bgcolor: 'red',
- disabled: false,
- size: "large",
- onClick: () => alert("Primer botón"),
- },
-};
-export const Secondary: Story = {
     args: {
-        text: "Segundo botón",
-        txtcolor: 'black',
-        bgcolor: 'green',
-        disabled: false,
-        size: "small",
-        onClick: () => alert("Segundo botón"),
- },
-};
+    text: "Enviar",
+    txtcolor: 'white',
+    bgcolor: 'black',
+    bordercolor: 'black',
+    borderwidth: '4px',
+    hoverTxtcolor: 'black',
+    hoverBgcolor: 'white',
+    disabled: false,
+    size: "small",
+    onClick: () => alert("Se ha enviado correctamente"),
+    },
+   };
+   export const Secondary: Story = {
+       args: {
+           text: "Limpiar",
+           txtcolor: 'blue',
+           bgcolor: 'pink',
+           bordercolor: 'black',
+           borderwidth: '4px',
+           hoverTxtcolor: 'pink',
+           hoverBgcolor: 'blue',
+           disabled: false,
+           size: "small",
+           onClick: () => alert("Se ha limpiado correctamente"),
+    },
+   };
