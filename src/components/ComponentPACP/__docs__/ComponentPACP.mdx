@@ -15,24 +15,20 @@ Componente de botón con diferentes especializaciones.
 ## Usage
 
 ```ts
-import {ComponentPACP} from 'milibreria';
+import { ComponentPACP } from 'milibreria';
 
-function Example(){
- return (
- <ComponentPACP
- text: "Enviar",
- txtcolor: 'white',
- bgcolor: 'black',
- bordercolor: 'black',
- borderwidth: '4px',
- hoverTxtcolor: 'black',
- hoverBgcolor: 'white',
- disabled: false,
- size: "small",
- onClick: () => alert("Se ha enviado correctamente"),
- />
- );
-};
+function Example() {
+  return (
+    <ComponentPACP
+      text="Enviar"
+      txtcolor='white'
+      bgcolor='black'
+      height='100px' // Puedes ajustar la altura
+      width='200px'  // Puedes ajustar el ancho
+      disabled={false}
+    />
+  );
+}
 
 export default Example;
 ``` 
@@ -46,19 +42,16 @@ export default Example;
 ```ts
 import {ComponentPACP} from 'milibreria';
 
-function Example(){ 
-     return (
- <ComponentPACP
-     text: "Limpiar",
-     txtcolor: 'blue',
-     bgcolor: 'pink',
-     bordercolor: 'black',
-     borderwidth: '4px',
-     hoverTxtcolor: 'pink',
-     hoverBgcolor: 'blue',
-     disabled: false,
-     size: "small",
-     onClick: () => alert("Se ha limpiado correctamente"),
- />
- );
-};
+function Example() {
+  return (
+    <ComponentPACP
+      text="Limpiar"
+      txtcolor='blue'
+      bgcolor='pink'
+      height='100px' // Puedes ajustar la altura
+      width='200px'  // Puedes ajustar el ancho
+      disabled={false}
+    />
+  );
+}
+export default Example;

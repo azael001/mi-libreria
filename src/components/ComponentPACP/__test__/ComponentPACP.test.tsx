@@ -5,7 +5,7 @@ import ComponentPACP from "../ComponentPACP";
 describe("MyButton component", () => {
  it("El botón se debería renderizar correctamente", () => {
  render(<ComponentPACP text='Hola' txtcolor='white' bgcolor='orange' />);
- const button = screen.getByRole("button");
- expect(button).toBeInTheDocument();
+ const card = screen.getByRole("card");
+ expect(card).toBeInTheDocument();
  });
 });
