@@ -1,7 +1,7 @@
 import { MouseEventHandler } from 'react';
 import IconButton from '@mui/material/IconButton';
 import FavoriteIcon from '@mui/icons-material/Favorite';
-//Declaro la interface del componente. 
+
 export interface MyFavouriteProps{
  bgcolor: string;
  disabled?: boolean; 

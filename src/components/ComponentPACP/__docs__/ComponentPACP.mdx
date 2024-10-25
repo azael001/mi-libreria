@@ -1,0 +1,64 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./example.tsx";
+import * as ComponentPACP from "./ComponentPACP.stories.tsx";
+
+<Meta of={ComponentPACP} title="ComponentPACP" />
+
+# ComponentPACP
+
+Componente de botón con diferentes especializaciones.
+
+#### Example
+
+<Canvas of={ComponentPACP.Primary} />
+
+## Usage
+
+```ts
+import {ComponentPACP} from 'milibreria';
+
+function Example(){
+ return (
+ <ComponentPACP
+ text: "Primer botón",
+ txtcolor: 'white',
+ bgcolor: 'red',
+ bordercolor: 'black',
+ borderwidth: '2px',
+ hoverTxtcolor: 'black',
+ hoverBgcolor: 'white',
+ disabled: false,
+ size: "large",
+ onClick: () => alert("Primer botón"),
+ />
+ );
+};
+
+export default Example;
+``` 
+
+#### Example
+
+<Canvas of={ComponentPACP.Secondary} />
+
+## Usage
+
+```ts
+import {ComponentPACP} from 'milibreria';
+
+function Example(){ 
+     return (
+ <ComponentPACP
+  text: "Segundo botón",
+        txtcolor: 'black',
+        bgcolor: 'green',
+        bordercolor: 'black',
+        borderwidth: '2px',
+        hoverTxtcolor: 'black',
+        hoverBgcolor: 'white',
+        disabled: false,
+        size: "small",
+        onClick: () => alert("Segundo botón"),
+ />
+ );
+};

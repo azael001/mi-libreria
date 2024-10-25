@@ -1,10 +1,10 @@
 import React from "react";
 
-import MyButton, { MyButtonProps } from "../MyButton"; 
+import ComponentPACP, { ComponentPACPProps } from "../ComponentPACP"; 
 
-function Example(props: MyButtonProps){
+function Example(props: ComponentPACPProps){
  return(
- <MyButton
+ <ComponentPACP
  text={props.text}
  bgcolor={props.bgcolor}
  txtcolor={props.txtcolor}

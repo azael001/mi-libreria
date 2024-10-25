@@ -1,17 +1,17 @@
 import { MouseEventHandler } from 'react';
 import Button from '@mui/material/Button';
-
-export interface MyButtonProps{
+export interface ComponentPACPProps{
  text: string; 
  txtcolor: string; 
  bgcolor:string; 
- size?: "small" | "medium" | "large"; 
+ size?: "small" | "medium" | "large";  
 
- disabled?: boolean;
+ disabled?: boolean; 
  onClick?: MouseEventHandler<HTMLButtonElement>;
+
 }
 
-function MyButton(props: MyButtonProps){
+function ComponentPACP(props: ComponentPACPProps){
  
  const { bgcolor, text, txtcolor, disabled, onClick, size } = props
  return(
@@ -26,4 +26,4 @@ function MyButton(props: MyButtonProps){
  </Button>
  )
 }
-export default MyButton;
+export default ComponentPACP;
