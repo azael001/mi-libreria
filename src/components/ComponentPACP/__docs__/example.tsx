@@ -8,8 +8,10 @@ function Example(props: ComponentPACPProps) {
       bgcolor={props.bgcolor}
       txtcolor={props.txtcolor}
       height={props.height} 
-      width={props.width} 
-      disabled={props.disabled}
+      width={props.width}
+      icon={props.icon}
+      iconColor={props.iconColor}
+      
     />
   );
 }
