@@ -1,7 +1,7 @@
 import { MouseEventHandler } from 'react';
 import IconButton from '@mui/material/IconButton';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-
+{/*Pablo Azael Carballo Pérez*/}
 export interface MyFavouriteBorderProps{
  bgcolor: string;
  disabled?: boolean; 

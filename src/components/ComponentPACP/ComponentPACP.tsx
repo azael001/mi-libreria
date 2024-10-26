@@ -3,6 +3,7 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import Icon from '@mui/material/Icon';
 import FavoriteIcon from '@mui/icons-material/Favorite'
+{/*Pablo Azael Carballo Pérez*/}
 
 export interface ComponentPACPProps {
   text: string;

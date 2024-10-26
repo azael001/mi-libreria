@@ -1,6 +1,6 @@
 import { MouseEventHandler } from 'react';
 import Button from '@mui/material/Button';
-
+{/*Pablo Azael Carballo Pérez*/}
 export interface MyButtonProps{
  text: string; 
  txtcolor: string; 
